@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+
+<body>
+    <!--Funções -- formas de separar o código em varios pedaços em que pode utilizar varios valores -->
+    <script>
+        //função simplespara n fazer document e ficar facil
+        function pl() {
+            //pular linha/essa não tem parametro
+            document.write("<br>")
+        }
+        pl()
+
+        //função procedimento
+        //um usa retorno--retona o valor e o outro não
+
+        //o que não retorna - só recebe
+        function mult(a, b) {
+            //recebeu os parametros que estão dentro dos parenteses 
+            let mult = a * b
+            document.write(mult)
+        }
+
+        var n1 = parseInt(prompt("digite o número"))//salvou em a o valor de n1 e fez a multiplicação
+        var n2 = parseInt(prompt("digite o número"))//salvou em b o valor de n2 e fez a multiplicação
+        document.write("Função sem retorno\n")
+
+        mult(n1, n2)//só irá aprecer para o usuário quando a função for invocada/chamada
+        pl()//intervenção
+        //função com retorno-return
+
+        function multiplicação(c, d) {
+            //vai retornar a multiplicação dessas var
+            return c * d
+        }
+        var n3 = parseInt(prompt("Digite o número:"))
+        var n4 = parseInt(prompt("Digite o número:"))
+        document.write("Função com retorno\n")
+        var multi = multiplicação(n3, n4) 
+        document.write(multiplicação(n3,n4))
+
+        //fazer desafio pegar o imc e fazer em função
+    </script>
+</body>
+
+</html>

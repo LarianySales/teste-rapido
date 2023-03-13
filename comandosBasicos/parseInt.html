@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pegar a parte inteira do valor</title>
+</head>
+<body>
+    <!-- as vezes quando se usa o mais/+ sem o parseint pode ser interpretado pelo sistema que estamos concatenando -->
+    <script>
+        let  idade1 = parseInt(prompt("Digite a 1° idade:"))
+        let idade2 = parseInt(prompt("Digite a 2° idade:"))
+        let idade3 = parseInt(prompt("Digite a 3° idade:"))
+        //sem o parseint ele entende que está recebendo uma string não uma int/um n° inteiro
+        
+        var media = (idade1 + idade2 + idade3)/ 3
+        
+        document.write("A média das idades é "+ media.toFixed(2))//para arredondar para os dois n°'s depois da vígula
+        
+        document.write("/A média das idades é "+ Math.round(media))//para arredondar a nota para o valor mais proxím0 inteiro
+    </script>
+</body>
+</html>
